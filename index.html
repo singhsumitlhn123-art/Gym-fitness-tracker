@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gym Fitness Tracker</title>
+<title>My Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1> Gym Fitness Tracker</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Fitness Calculator</h2>
+
+        <label>Weight (kg)</label>
+        <input type="number" id="weight" placeholder="">
+        <label>Height (cm)</label>
+        <input type="number" id="height" placeholder="">
+
+        <label>Age</label>
+        <input type="number" id="age" placeholder="">
+
+        <label>Gender</label>
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <button onclick="calculateBMI()">Calculate</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- To-Do Section -->
+    <div class="card">
+        <h2>Today's Workout Tasks</h2>
+
+        <div class="task-container">
+            <input type="text" id="taskInput" placeholder="Enter you task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <p id="emptyMsg" class="empty">please add one task</p>
+        <ul id="taskList"></ul>
+    </div>
+     <section class="about">
+    <h1>About Us</h1>
+
+    <div class="team">
+
+    
+        <div class="member left">
+            <img src="image/amit.jpeg">
+            <h3>Amit Kumar Singh</h3>
+            <a href="https://www.linkedin.com/in/amit-kumar-singh-232b1738a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+        </div>
+
+    
+        <div class="member center">
+            <img src="image/Dr Abhishek.jpeg" >
+            <h3>Dr Abhishek</h3>
+            <a href="https://www.linkedin.com/in/dr-abhishek-thakur-00123321?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+        </div>
+
+
+        <div class="member right">
+            <img src="image/sumit.jpeg">
+            <h3>Sumit Singh</h3>
+            <a href="https://www.linkedin.com/in/sumit-singh-99083938a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+        </div>
+
+    </div>
+</section>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
